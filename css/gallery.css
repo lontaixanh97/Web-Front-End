@@ -1,0 +1,84 @@
+.content {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	/*text-align: center;*/
+}
+#list-button {
+	text-align: center;
+		margin-bottom: 50px;
+}
+#list-button button {
+	margin: 0 10px;
+	border-radius: 15px;
+
+}
+#list-button button:hover {
+	color: #f03c0b;
+	border-color: #f03c0b;
+	background-color: f5f5f5;
+}
+#lightbox .modal-content {
+    display: inline-block; 
+    background: #F4F4F4 url('http://assets.garygarside.com/img/grid_noise.png')	 ;
+    padding-bottom:15px; 
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    /*background-color: rgb(25, 25, 25);*/
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    
+    z-index:1032;
+}
+.thumbnail {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+.modal-body {
+	padding: 0 0 15px 0;
+}
+.box-hover {
+	height: 300px;background-color: rgba(240,60,11,0.6);position: absolute;top: -141px;width: 100% ;
+	display: none;
+	text-align: center;
+}
+.box-hover i{
+	font-size: 80px;
+	color: white;
+	margin-top: 120px;
+}
+.box {
+	position: relative;
+}
+.box:hover .box-hover {
+	display: block;
+}
+h4 {
+	color: #f03c0b;
+}
+.infor {
+	margin-bottom: 30px;
+}
+#pagination {
+	width: 241px; margin: auto;
+}
+#pagination ul li a{
+	margin-right: 15px;
+	color: #777;
+}
+#pagination ul li a.now {
+	background-color: #f03c0b;
+	color: white;
+}
+#pagination ul li a:hover {
+	border:1px solid #f03c0b;
+	background-color: pink;
+	color: #777;
+}

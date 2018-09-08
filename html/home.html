@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/01-home.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu-style1.css">
+	<link rel="stylesheet" type="text/css" href="../css/01-home.css">
+</head>
+<body>
+	
+	<div id="header-menu" style="background: url(../images/bg.jpg); background-size: 100% 100%">
+		<!-- start head -->
+		<header>
+				<nav class="navbar navbar-default" role="navigation" style="border-radius: 0px;">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="home.html"><i class="fa fa-subway" aria-hidden="true" style="color: #f03c0b"></i><span>BOOK</span><p>YOUR</p><span>TRAIN</span></a>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav navbar-right" id="menu-12">
+								<li><a href="Sign Up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+								<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							</ul>
+							<div id="menu-2">
+								<ul class="nav navbar-nav" id="menu-21">
+									<li><a href="home.html" id="home-li">Home</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li class="dropdown" id="page">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="home.html">Home</a></li>
+											<li id="blog0">
+												<a href="blog.html">Blog<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+												<ul id="blog">
+													<li><a href="blog.html">Action</a></li>
+													<li><a href="blog.html">Another action</a></li>
+													<li><a href="blog.html">Something else here</a></li>
+													<li><a href="blog.html">Separated link</a></li>
+												</ul>
+											</li>
+											<li id="blog1">
+												<a href="blog.html">Blog <b class="caret"></b></a>
+												<ul id="blog11">
+													<li><a href="blog.html">Action</a></li>
+													<li><a href="blog.html">Another action</a></li>
+													<li><a href="blog.html">Something else here</a></li>
+													<li><a href="blog.html">Separated link</a></li>
+												</ul>
+											</li>
+											<li id="gallery0">
+												<a href="gallery.html">Gallery<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+												<ul id="gallery">
+													<li><a href="gallery.html">Train</a></li>
+													<li><a href="gallery.html">Shinkansen</a></li>
+													<li><a href="gallery.html">Bus</a></li>
+												</ul>
+											</li>
+											<li id="gallery1">
+												<a href="gallerry.html">Gallery <b class="caret"></b></a>
+												<ul id="gallery11">
+													<li><a href="gallerry.html">Train</a></li>
+													<li><a href="gallerry.html">Shinkansen</a></li>
+													<li><a href="gallerry.html">Bus</a></li>
+												</ul>
+											</li>
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="04-results.html">Search Ticket</a></li>
+											<li><a href="#">User Setting</a></li>
+											<li><a href="#">Shortcodes</a></li>
+											<li><a href="error.html">404 page</a></li>
+										</ul>
+									</li>
+									<li><a href="about.html">About</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li class="dropdown" id="usd">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">USD <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">VND</a></li>
+											<li><a href="#">JPY</a></li>
+										</ul>
+									</li>
+									<li class="dropdown" id="bn">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="bn-li">EN <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">VN</a></li>
+											<li><a href="#">JP</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							
+						</div><!-- /.navbar-collapse -->
+				</nav>
+		</header>
+		<!-- end head -->
+		<div id="menu" style="background-color: rgba(0,0,0,0.2);">
+			<div class="container">
+				<div class="col-xs-12 col-md-6">
+					<img src="../images/04.png">
+					<p>We saves your time both while purchasaing the check-in and during the travel</p>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<fieldset style="background-color: rgba(66,67,70,0.8)">
+						<form>
+							<label>Travelling Route</label>
+							<div class="row">
+								<div class="col-xs-12 col-sm-5 address" id="div1">
+									<div class="input-group">
+								      <input type="text" class="form-control" placeholder="From">
+								      <span class="input-group-btn">
+								        <button class="btn btn-default" type="button" style="padding-bottom: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+								      </span>
+								    </div>
+								</div>
+								<div class="col-xs-12 col-sm-2" id="refresh">
+									<button type="button" class="btn"><i class="fa fa-refresh" aria-hidden="true" id="switch1"></i></button>
+								</div>
+								<div class="col-xs-12 col-sm-5 address" id="div2">
+									<div class="input-group">
+								      <input type="text" class="form-control" placeholder="To">
+								      <span class="input-group-btn">
+								        <button class="btn btn-default" type="button" style="padding-bottom: 4px;"><i class="fa fa-map-marker" aria-hidden="true"></i></button>
+								      </span>
+								    </div>
+								</div>
+							</div>
+							<label>Travelling Date</label>
+							<div class="row">	       
+								<div class="col-xs-12 col-sm-6">
+						            <div class="form-group">
+						                <div class="input-group date" id="datetimepicker1">
+						                    <input type="text" class="form-control" placeholder="DD-MM-YYYY" class="date">
+						                    <span class="input-group-addon"><span class="fa fa-calendar"></span>
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="col-xs-12 col-sm-6">
+						            <div class="form-group">
+						                <div class="input-group date" id="datetimepicker1">
+						                    <input type="text" class="form-control" placeholder="One Way" class='date'>
+						                    <span class="input-group-addon"><span class="fa fa-calendar"></span>
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+							    
+							</div>
+							<label>Travelling Persons</label>
+							<div class="row">
+								<div class="col-xs-12 col-sm-6">
+									<select class="form-control">
+									  <option>Adult</option>
+									  <option>1 Adult</option>
+									  <option>2 Adults</option>
+									  <option>3 Adults</option>
+									  <option>4 Adults</option>
+									</select>
+								</div>
+								
+								<div class="col-xs-12 col-sm-6">
+									<select class="form-control">
+									  <option>0 Child</option>
+									  <option>1 Child</option>
+									  <option>2 Childs</option>
+									  <option>3 Childs</option>
+									  <option>4 Childs</option>
+									  
+									</select>
+								</div>
+							</div>
+							<button type="button" class="btn"><a href="results.html">SEARCH TICKETS</a></button>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+	</div>
+	</div>
+	<content>
+		<section class="section section1">
+			<div class="container">
+				<div class="title-section">
+					<a href="#"><h3>TOP TRAVEL DESTINATIONS</h3></a>
+					<button type="button" class="btn btn-default">Browse All</button>
+				</div>
+				<div id="section1-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel">
+							<div class="img-1">
+								<div id="myCarousel" class="carousel slide" data-ride="carousel">
+								    <!-- Indicators -->
+								    <ol class="carousel-indicators">
+								      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								      <li data-target="#myCarousel" data-slide-to="1"></li>
+								    </ol>
+								    <!-- Wrapper for slides -->
+								    <div class="carousel-inner">
+								      	<div class="item active">
+								        	<img src="../images/ny.jpg" alt="Los Angeles" style="width:98%;">
+								      	</div>
+								    <div class="item">
+								        <img src="../images/la.jpg" alt="Chicago" style="width:98%;">
+								    </div>								 
+								</div>								    
+							</div>
+						</div>
+							
+														
+							<div id="table">
+								<table>
+									<tbody><tr class="City">
+										<th class="col-1">New York</th>
+										<th class="col-2"><span>Los Angeles</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Penn Station, Ny</td>
+										<td class="col-2"><span>Union Station, CA</span></td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Every day</td>
+										<td class="col-2"><span>From <p>$238</p></span></td>
+									</tr>
+								</tbody></table>
+							</div>
+							<div class="img-2 box-hover">
+								
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div class="img-1">
+								<div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-1" data-slide-to="1" class=""></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/la.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/wd.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tbody><tr class="City">
+										<th class="col-1">Los Angeles</th>
+										<th class="col-2"><span>Washington DC</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Union Station, CA</td>
+										<td class="col-2"><span>Union Station, CA</span></td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week days</td>
+										<td class="col-2"><span>From <p>$248</p></span></td>
+									</tr>
+								</tbody></table>
+							</div>
+							<div class="img-2 box-hover">
+								
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div class="img-1">
+								<div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-2" data-slide-to="1" class=""></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/wd.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/ny.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tbody><tr class="City">
+										<th class="col-1">Washington DC</th>
+										<th class="col-2"><span>New York</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Union Station, DC</td>
+										<td class="col-2"><span>Penn Station, NY</span></td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week end</td>
+										<td class="col-2"><span>From <p>$258.00</p></span></td>
+									</tr>
+								</tbody></table>
+							</div>
+							<div class="img-2 box-hover">
+								
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div class="img-1">
+								<div id="carousel-example-generic-3" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-3" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-3" data-slide-to="1" class=""></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/sd.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/cg.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tbody><tr class="City">
+										<th class="col-1">San Diego</th>
+										<th class="col-2"><span>Chicago</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Old Town, CA</td>
+										<td class="col-2"><span>Union Station, ll..</span></td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Every day</td>
+										<td class="col-2"><span>From <p>$238</p></span></td>
+									</tr>
+								</tbody></table>
+							</div>
+							<div class="img-2 box-hover"> 
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div class="img-1">
+								<div id="carousel-example-generic-4" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-4" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-4" data-slide-to="1" class=""></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/cg.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/pp.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tbody><tr class="City">
+										<th class="col-1">Chicago</th>
+										<th class="col-2"><span>Philadelphia</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Union Station, ll..</td>
+										<td class="col-2"><span>30th Street Station</span></td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week days</td>
+										<td class="col-2"><span>From <p>$248</p></span></td>
+									</tr>
+								</tbody></table>
+							</div>
+							<div class="img-2 box-hover"> 
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel  ">
+							<div style="width: 100%" class="img-1">
+								<div id="carousel-example-generic-5" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-5" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-5" data-slide-to="1" class=""></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/pp.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/sd.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  
+
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tbody><tr class="City">
+										<th class="col-1">Philadelphia</th>
+										<th class="col-2"><span>San Diego</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">30th Street Station</td>
+										<td class="col-2"><span>Old Town, CA</span></td>
+									</tr>
+									<tr>
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week days</td>
+										<td class="col-2"><span>From <p>$258.00</p></span></td>
+									</tr>
+								</tbody></table>
+							</div>
+							<div class="img-2 box-hover">
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section2">
+			<div class="container">
+				<div class="title-section">
+					<a href="#"><h3>LATEST POSTS</h3></a>
+					<button type="button" class="btn btn-default">Older Posts</button>
+				</div>
+				<div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 box-order">							
+							<div class="img-3">
+								<img src="../images/18.jpg" width="100%" height="100%">
+								<div class="img-3-hover">
+									<button type="button" class="btn btn-default"><a href="blog.html">Read More</a></button>
+								</div>
+							</div>
+							<div class="img-4 img-41">
+								<h4>New train destination</h4>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, aliquid.
+								<hr>
+								<p class="img-4-p1">by <span>Admin</span></p>
+								<p class="img-4-p2">1 day ago</p>
+							</div>							
+						</div>
+						<div class="col-xs-12 col-sm-6  box-order">
+							<div class="img-3">
+								<img src="../images/19.jpg" width="100%" height="100%">
+								<div class="img-3-hover">
+									<button type="button" class="btn btn-default"><a href="blog.html">Read More</a></button>
+								</div>
+							</div>
+							<div class="img-4 img-41">
+								<h4>Best travel destinations</h4>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, enim?
+								<hr>
+								<p class="img-4-p1">by <span>Admin</span></p>
+								<p class="img-4-p2">1 day ago</p>
+							</div>	
+						</div>
+						<div class="col-xs-12 col-sm-6  box-order">
+							<div class="img-4 img-42">
+								<h4>Top 10 best train stations</h4>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, corrupti.
+								<hr>
+								<p class="img-4-p1">by <span>Admin</span></p>
+								<p class="img-4-p2">1 day ago</p>
+							</div>
+							<div class="img-3">
+								<img src="../images/20.jpg" width="100%" height="100%">
+								<div class="img-3-hover">
+									<button type="button" class="btn btn-default"><a href="blog.html">Read More</a></button>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-xs-12 col-sm-6  box-order">
+							<div class="img-4 img-42">
+								<h4>Summer trips 2015</h4>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, magnam.
+								<hr>
+								<p class="img-4-p1">by <span>Admin</span></p>
+								<p class="img-4-p2">1 day ago</p>
+							</div>
+							<div class="img-3">
+								<img src="../images/21.jpg" width="100%" height="100%">
+								<div class="img-3-hover">
+									<button type="button" class="btn btn-default"><a href="blog.html">Read More</a></button>
+								</div>
+							</div>
+							
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section section3">
+			<div id="section3">
+				<div class="container">
+				<div class="title-section">
+					<a href="#"><h3>E-TICKETS ADVANTAGES</h3></a>
+					<button type="button" class="btn btn-default">Learn More</button>
+				</div>
+				<div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 box-eTickets">
+							<img src="../images/03.png">
+							<hr>
+							<p>
+								It's very easy to order a train ticket online. E-ticket can not be lost or forgetten at home.
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-4 box-eTickets">
+							<img src="../images/02.png">
+							<hr>
+							<p>
+								These's no need to go to the ticket office and additionaly before your trip. Save your money and nerves.
+							</p>
+						</div>
+						<div class="col-xs-12 col-sm-4 box-eTickets">
+							<img src="../images/01.png">
+							<hr>
+							<p>
+								To order tickets all you need is Internet, a couple minutes and a payment card. Grap bonuses and discounts.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			
+		</section>
+		<section class="section section4">
+			<div class="container">
+				<div class="title-section" style="padding-bottom: 30px">
+					<a href="#"><h3>TESTIMONIALS</h3></a>
+				</div>
+				<div id="carousel-example-generic-10" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic-10" data-slide-to="0" class=""></li>
+				    <li data-target="#carousel-example-generic-10" data-slide-to="1" class=""></li>
+				    <li data-target="#carousel-example-generic-10" data-slide-to="2" class="active"></li>
+				    <li data-target="#carousel-example-generic-10" data-slide-to="3" class=""></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" style="margin-top: 30px;">
+				    <div class="item">
+				      <div class="row container">
+							<div class="col-xs-12 col-md-6">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/17.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The White</h3>
+										<span><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6 ">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/22.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The Grey</h3>
+										<span><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="item">
+				      	<div class="row container">
+							<div class="col-xs-12 col-md-6">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/17.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The White</h3>
+										<span><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/22.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The Grey</h3>
+										<span><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="item active">
+				      	<div class="row container">
+							<div class="col-xs-12 col-md-6">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/17.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The White</h3>
+										<span><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/22.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The Grey</h3>
+										<span><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="item">
+				      	<div class="row container">
+							<div class="col-xs-12 col-md-6">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/17.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The White</h3>
+										<span>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="row">
+									<div class="col-xs-3 row1">
+										<img src="../images/22.jpg" class="img-circle">
+									</div>
+									<div class="col-xs-9 row1">
+										<h3>Gandalf The Grey</h3>
+										<span><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptate qui pariatur facere neque, autem. Distinctio at commodi repellendus beatae."</i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic-10" role="button" data-slide="prev" style="height: 200px; width: 100px;">
+				    <span class="glyphicon glyphicon-chevron-left"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic-10" role="button" data-slide="next" style="height: 200px; width: 100px;">
+				    <span class="glyphicon glyphicon-chevron-right"></span>
+				  </a>
+				</div>
+			</div>
+		</section>
+	</content>
+	<footer>
+		<div class="container">
+			<div>
+				<div class="row">
+					<div class="hidden-xs col-sm-3 ">
+						<div class="thumbnail" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Menu</h4>
+							<ul>
+								<li><a>Press Centre</a></li>
+								<li><a>Travel News</a></li>
+								<li><a>Privacy Policy</a></li>
+								<li><a>Best Price Guarantee</a></li>
+								<li><a>About Us</a></li>
+								<li><a>Contacts</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="thumbnail" id="thumbnail2" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Contact Us</h4>
+							<table>
+								<tbody><tr>
+									<td><i class="fa fa-phone-square" aria-hidden="true"></i></td>
+									<td><a href="#"><b>+444 5533 8866</b></a><!--</td-->
+								</td></tr>
+								<tr>
+									<td><i class="fa fa-skype" aria-hidden="true"></i></td>
+									<td><a href="#">book.yourtrain</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+									<td><a href="#">mail@bookyourtrain.com</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+									<td><a href="#">5138 Little Shadow Gardens<br>Del Monte, Alaska<br>99631-4129, US</a></td>
+								</tr>
+							</tbody></table>
+					</div>
+					</div>
+					<div class="hidden-xs col-sm-3 ">
+						<div class="thumbnail " id="thumbnail3" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Blog Posts</h4>
+							<table>
+								<tbody><tr>
+									<th><div class="img">
+										<img src="../images/17.jpg" style="width: 100%;height: auto;">
+									</div></th>
+									<th>Gandalf The White - Wizard<br><span><i>7 days ago</i></span></th>
+								</tr>
+								<tr>
+									<th><div class="img">
+										<img src="../images/ar.jpg" style="width: 100%;height: auto;">
+									</div></th>
+									<th>Aragorn - King of Gondor<br><span><i>247 years ago</i></span></th>
+								</tr>
+							</tbody></table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 ">
+						<div class="thumbnail " id="thumbnail4" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Subcribe</h4>
+							<span>Be aware of news</span>
+							<form>
+								<input type="email" name="" placeholder="Your e-mail" style="padding-left: 10px;">
+								<button type="button" class="btn btn-xs" style="background: pink">Send</button>
+							</form>
+							<h4>Follow Us</h4>
+							<div>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-google-plus" aria-hidden="true"></i>
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<hr style="margin-top: 10px; margin-bottom: 10px;">
+			<div id="ff">
+				<div id="ff-left"><a href="#"><i class="fa fa-subway" aria-hidden="true" style="color: #f03c0b"></i><span>BOOK</span><p>YOUR</p><span>TRAIN</span></a></div>
+				<div id="ff-right">@2015 BESTWEBSOFT</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		 $(function(){
+		 	var x=
+		 	$('#refresh').click(function(){
+
+		 	})
+		 })
+		 $('.date').datepicker({
+    		format: 'dd/mm/yyyy',
+    		startDate: '+0d'
+		});
+	</script>
+</body>
+</html>

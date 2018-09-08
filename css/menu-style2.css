@@ -1,0 +1,67 @@
+#header-menu {
+	background-image: url(../images/ts.jpg);
+	background-size: cover;
+}
+#menu {
+	
+	width: 100%;
+	padding-top: 150px;
+	color: white;
+}
+#menu button a {
+	color: white;
+	text-decoration: none;
+}
+@media (max-width: 768px){
+	#menu select {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+.input-group-addon {
+	background-color: white;
+}
+#menu p {
+	margin-top: 30px;
+}
+#menu fieldset {
+	background-color: rgba(66,67,70,0.9);
+	padding: 20px 10px 50px 10px;
+
+}
+#menu fieldset .row {
+	margin-bottom: 20px;
+	margin-left: 0;
+	/*margin-right: 0;*/
+}
+#menu fieldset .fa-map-marker {
+	margin: 0;
+
+}
+
+.address .btn-default {
+	padding-bottom: 3px;
+}
+.address {
+	float: right;
+}
+#refresh {
+	text-align: center;
+	padding: 0;
+	color: #777;
+	float: right;
+}
+#menu fieldset form>button {
+	background-color: #f03c0b;
+	font-weight: bold;
+	border: 0;
+	float: right;
+	}
+@media (min-width: 992px) {
+	#menu fieldset form>button {
+		margin-right: 35px;
+	}
+}
+#menu fieldset form>button:hover {
+	opacity: 0.7;
+}

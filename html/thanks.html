@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='UTF-8'>
+	<title>THANK YOU</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='../css/bootstrap.min.css'>
+	<link rel='stylesheet' type='text/css' href='../css/header-footer.css'>
+	<link rel='stylesheet' type='text/css' href='../css/thanks.css'>
+
+	<style type="text/css">
+		#menu-about {
+			text-align: center;
+			color: white;
+			border-bottom: 4px solid #f03c0b;
+			padding-top: 30px;
+		}
+		#header-menu {
+			background-image: url(../images/bg.jpg);
+			background-position: middle;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id='header-menu'>
+		<!-- start head -->
+		<header>
+				<nav class="navbar navbar-default" role="navigation" style="border-radius: 0px;">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header" >
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="home.html" ><i class="fa fa-subway" aria-hidden="true" style="color: #f03c0b"></i><span>BOOK</span><p>YOUR</p><span>TRAIN</span></a>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav navbar-right" id="menu-12">
+								<li><a href="Sign Up.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+								<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							</ul>
+							<div id="menu-2">
+								<ul class="nav navbar-nav" id="menu-21">
+									<li><a href="home.html" id="home-li">Home</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li class="dropdown" id="page">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="home.html">Home</a></li>
+											<li id="blog0">
+												<a href="blog.html">Blog<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+												<ul id="blog">
+													<li><a href="blog.html">Action</a></li>
+													<li><a href="blog.html">Another action</a></li>
+													<li><a href="blog.html">Something else here</a></li>
+													<li><a href="blog.html">Separated link</a></li>
+												</ul>
+											</li>
+											<li id="blog1">
+												<a href="blog.html">Blog <b class="caret"></b></a>
+												<ul id="blog11">
+													<li><a href="blog.html">Action</a></li>
+													<li><a href="blog.html">Another action</a></li>
+													<li><a href="blog.html">Something else here</a></li>
+													<li><a href="blog.html">Separated link</a></li>
+												</ul>
+											</li>
+											<li id="gallery0">
+												<a href="gallery.html">Gallery<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+												<ul id="gallery">
+													<li><a href="gallerry.html">Train</a></li>
+													<li><a href="gallerry.html">Shinkansen</a></li>
+													<li><a href="gallerry.html">Bus</a></li>
+												</ul>
+											</li>
+											<li id="gallery1">
+												<a href="gallerry.html" >Gallery <b class="caret"></b></a>
+												<ul id="gallery11">
+													<li><a href="gallerry.html">Train</a></li>
+													<li><a href="gallerry.html">Shinkansen</a></li>
+													<li><a href="gallerry.html">Bus</a></li>
+												</ul>
+											</li>
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="#">Contact</a></li>
+											<li><a href="results.html">Search Ticket</a></li>
+											<li><a href="#">User Setting</a></li>
+											<li><a href="#">Shortcodes</a></li>
+											<li><a href="error.html">404 page</a></li>
+										</ul>
+									</li>
+									<li><a href="about.html">About</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li class="dropdown" id="usd">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">USD <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">VND</a></li>
+											<li><a href="#">JPY</a></li>
+										</ul>
+									</li>
+									<li class="dropdown" id="bn">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="bn-li">EN <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">VN</a></li>
+											<li><a href="#">JP</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							
+						</div><!-- /.navbar-collapse -->
+				</nav>
+		</header>
+		<div id="menu-about" style="background-color: rgba(0,0,0,0.3); height: 512px; padding-top: 70px;">
+			<img src="../images/thanks.png">
+			<h1 style="font-weight: bold;">THANK YOU!</h1>
+			<h3>BOOKING PROCESS IS SUCCESSFULLY COMPLETED</h3>
+		</div>
+		<!-- end head -->		
+	</div>
+	
+	<div class="section3" style="background: #F4F4F4 url('http://assets.garygarside.com/img/grid_noise.png');">
+			<div id="section3" style="padding-bottom: 30px">
+				<div class="container">
+					<div class="title-section">
+						<a href="#"><h3>E-TICKETS INSTRUCTION</h3></a>
+					</div>
+					<div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4 box-eTickets">
+								<img src="../images/thanks1.png">
+								<h4>You will receive an E-mail</h4>
+								<hr width="50%">
+								<p>
+									It's very easy to order a train ticket online. E-ticket can not be lost or forgetten at home.
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-4 box-eTickets">
+								<img src="../images/thanks2.png">
+								<h4>Save and print your E-Ticket</h4>
+								<hr width="50%">
+								<p>
+									These's no need to go to the ticket office and additionaly before your trip. Save your money and nerves.
+								</p>
+							</div>
+							<div class="col-xs-12 col-sm-4 box-eTickets">
+								<img src="../images/thanks3.png">
+								<h4>Show your E-Ticket on check-in</h4>
+								<hr width="50%">
+								<p>
+									To order tickets all you need is Internet, a couple minutes and a payment card.Grap bonuses and discounts.
+								</p>
+							</div>
+						</div>
+						<div id="attention">
+							<img src="../images/arrow.png">
+							<span>Attention! Please read important information!</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tempora debitis, provident doloremque velit quod explicabo voluptatibus iusto, nisi ratione!</p>
+						</div>
+					</div>				
+				</div>
+			</div>			
+	</div>
+	<section class="section section1">
+			<div class="container">
+				<div class="title-section">
+					<a href="#"><h3>TOP TRAVEL DESTINATIONS</h3></a>
+					<button type="button" class="btn btn-default">Browse All</button>
+				</div>
+				<div id="section1-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel">
+							<div class="img-1">
+								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+								  </ol>
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/ny.jpg" alt="..."  >
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/la.jpg" alt="..." >
+								      
+								    </div>
+								   
+								  </div>
+
+								  <!-- Controls -->
+								  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+								    <span class="glyphicon glyphicon-chevron-left"></span>
+								  </a>
+								  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+								    <span class="glyphicon glyphicon-chevron-right"></span>
+								  </a>
+								</div>
+							</div>
+							
+														
+							<div id="table">
+								<table>
+									<tr class="City">
+										<th class="col-1">New York</th>
+										<th class="col-2"><span>Los Angeles</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Penn Station, Ny</td>
+										<td class="col-2"><span>Union Station, CA</span></td>
+									</tr>
+									<tr >
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Every day</td>
+										<td class="col-2"><span>From <p>$328</p></span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="img-2 box-hover"  >
+								
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div  class="img-1">
+								<div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/la.jpg" alt="..." >
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/wd.jpg" alt="..." >
+								      
+								    </div>
+								   
+								  </div>
+
+								  <!-- Controls -->
+								  <a class="left carousel-control" href="#carousel-example-generic-1" role="button" data-slide="prev">
+								    <span class="glyphicon glyphicon-chevron-left"></span>
+								  </a>
+								  <a class="right carousel-control" href="#carousel-example-generic-1" role="button" data-slide="next">
+								    <span class="glyphicon glyphicon-chevron-right"></span>
+								  </a>
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tr class="City">
+										<th class="col-1">Los Angeles</th>
+										<th class="col-2"><span>Washington DC</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Union Station, CA</td>
+										<td class="col-2"><span>Union Station, CA</span></td>
+									</tr>
+									<tr >
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week days</td>
+										<td class="col-2"><span>From <p>$248</p></span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="img-2 box-hover"  >
+								
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div  class="img-1">
+								<div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/wd.jpg" alt="..." >
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/ny.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  <!-- Controls -->
+								  <a class="left carousel-control" href="#carousel-example-generic-2" role="button" data-slide="prev">
+								    <span class="glyphicon glyphicon-chevron-left"></span>
+								  </a>
+								  <a class="right carousel-control" href="#carousel-example-generic-2" role="button" data-slide="next">
+								    <span class="glyphicon glyphicon-chevron-right"></span>
+								  </a>
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tr class="City">
+										<th class="col-1">Washington DC</th>
+										<th class="col-2"><span>New York</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Union Station, DC</td>
+										<td class="col-2"><span>Penn Station, NY</span></td>
+									</tr>
+									<tr >
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week end</td>
+										<td class="col-2"><span>From <p>$258.00</p></span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="img-2 box-hover"  >
+								
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a>s</button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div class="img-1">
+								<div id="carousel-example-generic-3" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-3" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-3" data-slide-to="1"></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/sd.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/cg.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  <!-- Controls -->
+								  <a class="left carousel-control" href="#carousel-example-generic-3" role="button" data-slide="prev">
+								    <span class="glyphicon glyphicon-chevron-left"></span>
+								  </a>
+								  <a class="right carousel-control" href="#carousel-example-generic-3" role="button" data-slide="next">
+								    <span class="glyphicon glyphicon-chevron-right"></span>
+								  </a>
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tr class="City">
+										<th class="col-1">San Diego</th>
+										<th class="col-2"><span>Chicago</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Old Town, CA</td>
+										<td class="col-2"><span>Union Station, CA</span></td>
+									</tr>
+									<tr >
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Every day</td>
+										<td class="col-2"><span>From <p>$238</p></span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="img-2 box-hover"  > 
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel ">
+							<div class="img-1">
+								<div id="carousel-example-generic-4" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-4" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-4" data-slide-to="1"></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/cg.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/pp.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  <!-- Controls -->
+								  <a class="left carousel-control" href="#carousel-example-generic-4" role="button" data-slide="prev">
+								    <span class="glyphicon glyphicon-chevron-left"></span>
+								  </a>
+								  <a class="right carousel-control" href="#carousel-example-generic-4" role="button" data-slide="next">
+								    <span class="glyphicon glyphicon-chevron-right"></span>
+								  </a>
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tr class="City">
+										<th class="col-1">Chicago</th>
+										<th class="col-2"><span>Philadelphia</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">Union Station, ll..</td>
+										<td class="col-2"><span>30th Street Station</span></td>
+									</tr>
+									<tr >
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week days day</td>
+										<td class="col-2"><span>From <p>$248</p></span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="img-2 box-hover"  > 
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4 box-top-travel  " >
+							<div style="width: 100%" class="img-1">
+								<div id="carousel-example-generic-5" class="carousel slide" data-ride="carousel">
+								  <!-- Indicators -->
+								  <ol class="carousel-indicators">
+								    <li data-target="#carousel-example-generic-5" data-slide-to="0" class="active"></li>
+								    <li data-target="#carousel-example-generic-5" data-slide-to="1"></li>
+								    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+								  </ol>
+
+								  <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+								    <div class="item active">
+								      <img src="../images/pp.jpg" alt="...">
+								      
+								    </div>
+								    <div class="item">
+								      <img src="../images/sd.jpg" alt="...">
+								      
+								    </div>
+								   
+								  </div>
+
+								  <!-- Controls -->
+								  <a class="left carousel-control" href="#carousel-example-generic-5" role="button" data-slide="prev">
+								    <span class="glyphicon glyphicon-chevron-left"></span>
+								  </a>
+								  <a class="right carousel-control" href="#carousel-example-generic-5" role="button" data-slide="next">
+								    <span class="glyphicon glyphicon-chevron-right"></span>
+								  </a>
+								</div>
+							</div>
+							
+							<div id="table">
+								<table>
+									<tr class="City">
+										<th class="col-1">Philadelphia</th>
+										<th class="col-2"><span>San Diego</span></th>
+									</tr>
+									<tr class="Station">
+										<td class="col-1">30th Street Station</td>
+										<td class="col-2"><span>Old Town, CA</span></td>
+									</tr>
+									<tr >
+										<td colspan="2"><hr></td>
+
+									</tr>
+									<tr class="cost">
+										<td class="col-1">Week days</td>
+										<td class="col-2"><span>From <p>$258.00</p></span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="img-2 box-hover"  >
+								<button type="button" class="btn "><a href="results.html">Show Tickets</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<footer>
+		<div class="container">
+			<div>
+				<div class="row">
+					<div class="hidden-xs col-sm-3 ">
+						<div class="thumbnail" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Menu</h4>
+							<ul>
+								<li><a>Press Centre</a></li>
+								<li><a>Travel News</a></li>
+								<li><a>Privacy Policy</a></li>
+								<li><a>Best Price Guarantee</a></li>
+								<li><a>About Us</a></li>
+								<li><a>Contacts</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3">
+						<div class="thumbnail" id="thumbnail2" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Contact Us</h4>
+							<table>
+								<tbody><tr>
+									<td><i class="fa fa-phone-square" aria-hidden="true"></i></td>
+									<td><a href="#"><b>+444 5533 8866</b></a><!--</td-->
+								</td></tr>
+								<tr>
+									<td><i class="fa fa-skype" aria-hidden="true"></i></td>
+									<td><a href="#">book.yourtrain</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+									<td><a href="#">mail@bookyourtrain.com</a></td>
+								</tr>
+								<tr>
+									<td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+									<td><a href="#">5138 Little Shadow Gardens<br>Del Monte, Alaska<br>99631-4129, US</a></td>
+								</tr>
+							</tbody></table>
+					</div>
+					</div>
+					<div class="hidden-xs col-sm-3 ">
+						<div class="thumbnail " id="thumbnail3" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Blog Posts</h4>
+							<table>
+								<tbody><tr>
+									<th><div class="img">
+										<img src="../images/17.jpg" style="width: 100%;height: auto;">
+									</div></th>
+									<th>Gandalf The White - Wizard<br><span><i>7 days ago</i></span></th>
+								</tr>
+								<tr>
+									<th><div class="img">
+										<img src="../images/ar.jpg" style="width: 100%;height: auto;">
+									</div></th>
+									<th>Aragorn - King of Gondor<br><span><i>247 years ago</i></span></th>
+								</tr>
+							</tbody></table>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 ">
+						<div class="thumbnail " id="thumbnail4" style="margin-bottom: 10px">
+							<h4 style="margin-top: 20px">Subcribe</h4>
+							<span>Be aware of news</span>
+							<form>
+								<input type="email" name="" placeholder="Your e-mail" style="padding-left: 10px;">
+								<button type="button" class="btn btn-xs" style="background: pink">Send</button>
+							</form>
+							<h4>Follow Us</h4>
+							<div>
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-google-plus" aria-hidden="true"></i>
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<hr style="margin-top: 10px; margin-bottom: 10px;">
+			<div id="ff">
+				<div id="ff-left"><a href="#"><i class="fa fa-subway" aria-hidden="true" style="color: #f03c0b"></i><span>BOOK</span><p>YOUR</p><span>TRAIN</span></a></div>
+				<div id="ff-right">@2015 BESTWEBSOFT</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+#header-menu {
+	background-image: url(../images/ab.jpg);
+	background-size: 100% 100%;
+}
+#menu-about {
+	text-align: center;
+	color: white;
+	border-bottom: 4px solid #f03c0b;
+}
+/*section 1*/
+#about-s1 {
+	padding: 35px 10%;
+	/*text-align: center;*/
+}
+ #about-s1 h2 {
+ 	margin:30px auto;
+ 	width: 200px;
+ }
+ #about-s1 text {
+ 	text-align: left;
+ }
+ #about-s1 .text-end {
+ 	width: 70%;
+ 	margin:300px auto 30px auto;
+ 	text-align: center;
+ }
+ #about-s2 h2 {
+ 	width: 200px;
+ 	margin: 30px auto;
+ 	color: white;
+ }
+#about-s3 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+	#about-s3 .icon {
+		text-align: right;
+		color: #f03c0b;
+		font-size:30px;
+	}
+	#about-s3 h3 {
+		margin-top: 0;
+	}
+#about-s4 {
+	background-color: #fff;
+}
